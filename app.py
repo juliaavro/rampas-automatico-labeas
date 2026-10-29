@@ -7,6 +7,7 @@ import plotly.graph_objects as go
 
 from scipy.signal import savgol_filter
 from scipy.optimize import minimize, LinearConstraint
+from pathlib import Path
 
 
 # ============================================================
@@ -15,9 +16,15 @@ from scipy.optimize import minimize, LinearConstraint
 
 st.set_page_config(
     page_title="Greide Automático | LABEAS",
-    page_icon="📐",
     layout="wide"
 )
+
+from pathlib import Path
+
+logo = Path(__file__).parent / "logo_labeas.png"
+
+if logo.exists():
+    st.image(str(logo), width=180)
 
 st.title("Greide Automático de Estradas Rurais")
 st.caption(
