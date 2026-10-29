@@ -21,7 +21,7 @@ st.set_page_config(
 
 from pathlib import Path
 
-logo = Path(__file__).parent / "logo_labeas.png"
+logo = Path(__file__).parent / "5 (2) (1).png"
 
 if logo.exists():
     st.image(str(logo), width=180)
