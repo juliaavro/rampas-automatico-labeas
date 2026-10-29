@@ -15,7 +15,7 @@ from pathlib import Path
 # ============================================================
 
 st.set_page_config(
-    page_title="Greide Automático | LABEAS",
+    page_title="Rampas Automáticas | LABEAS",
     layout="wide"
 )
 
@@ -26,7 +26,7 @@ logo = Path(__file__).parent / "5 (2) (1).png"
 if logo.exists():
     st.image(str(logo), width=180)
 
-st.title("Greide Automático de Estradas Rurais")
+st.title("Rampas Automáticas de Estradas Rurais")
 st.caption(
     "LABEAS | Análise do perfil longitudinal e segmentação em rampas"
 )
